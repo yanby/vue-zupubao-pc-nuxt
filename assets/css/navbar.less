@@ -1,0 +1,97 @@
+
+.navbar{
+  position: fixed;
+  bottom: 42px;
+  right: 42px;
+  width: 60px;
+  height: 300px;
+  z-index: 9999;
+  box-shadow:0px 0px 8px 0px rgba(0,0,0,0.08);
+  ul{
+    li{
+      width: 60px;
+      height: 60px;
+      position: relative;
+      cursor: pointer;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      &:nth-of-type(1){
+        background: url("../images/navbar/zhaopu.png") no-repeat;
+      }
+      &:nth-of-type(2){
+        background: url("../images/navbar/zhuanpu.png") no-repeat;
+      }
+      &:nth-of-type(3){
+        background: url("../images/navbar/tel.png") no-repeat;
+      }
+      &:nth-of-type(4){
+        background: url("../images/navbar/code.png") no-repeat;
+      }
+      &:nth-of-type(5){
+        background: url("../images/navbar/top.png") no-repeat;
+      }
+      &:nth-of-type(1):hover{
+        background: url("../images/navbar/zhaopu-bg.png") no-repeat;
+      }
+      &:nth-of-type(2):hover{
+        background: url("../images/navbar/zhuanpu-bg.png") no-repeat;
+      }
+      &:nth-of-type(3):hover{
+        background: url("../images/navbar/tel-bg.png") no-repeat;
+        .tel-msg{
+          display: block;
+        }
+      }
+      &:nth-of-type(4):hover{
+        background: url("../images/navbar/code-bg.png") no-repeat;
+        .code-msg{
+          display: block;
+        }
+      }
+      &:nth-of-type(5):hover{
+        background: url("../images/navbar/top-bg.png") no-repeat;
+      }
+      .tel-msg{
+        display: none;
+        position: absolute;
+        top: 0px;
+        right: 60px;
+        width: 111px;
+        height: 60px;
+        text-align: center;
+        background: #fff;
+        box-shadow:0px 0px 8px 0px rgba(0,0,0,0.08);
+        p{
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 5px;
+          &:nth-of-type(1){
+            padding-top: 8px;
+          }
+        }
+      }
+      .code-msg{
+        display: none;
+        position: absolute;
+        top: -20px;
+        right: 60px;
+        background: #fff;
+        padding: 10px;
+        width: 130px;
+        height: 140px;
+        box-shadow:0px 0px 8px 0px rgba(0,0,0,0.08);
+         p{
+           width: 111px;
+           height: 120px;
+           background: url("../images/navbar/erweima.jpg") no-repeat;
+           -webkit-background-size: 111px 120px;
+           background-size: 111px 120px;
+         }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.payment{
+  width: 1120px;
+  height: 420px;
+  margin: 20px auto 84px;
+  padding: 40px;
+  background: #fff;
+}
+.payment_nav{
+  margin-bottom: 40px;
+  img{
+    width: 26px;
+    height: 27px;
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    margin-right: 15px;
+  }
+  span{
+    color: #333333;
+    font-size: 24px;
+  }
+}
+.payment_recharge{
+  height: 80px;
+  background: #F7F8FA;
+  text-align: center;
+  img{
+    width: 47px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+  }
+  p{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 80px;
+    span{
+      color: #E8584F;
+    }
+  }
+}
+.select_payment{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: center;
+  p{
+    color: #333333;
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 38px;
+  }
+  dl{
+    display: inline-block;
+    dt{
+      width: 16px;
+      height: 16px;
+      background: url(../images/pay/round.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      cursor: pointer;
+      &.on{
+        width: 16px;
+        height: 16px;
+        background: url(../images/pay/selected.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: inline-block;
+        position: relative;
+        top: 2px;
+      }
+    }
+    dd{
+      /*float: left;*/
+      display: inline-block;
+      margin-left: 10px;
+      margin-right: 40px;
+    }
+  }
+}
+.goPay{
+  background: #E8584F;
+  color: #fff;
+  text-align: center;
+  line-height: 42px;
+  width: 214px;
+  margin: 0 auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*微信支付弹窗*/
+.wxPayWrap{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+}
+.wxPayBox{
+  width: 400px;
+  height: 280px;
+  background: #fff;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -80px;
+  p{
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    span{
+      color: #07B906;
+    }
+  }
+}
+.wxPayTop{
+  height: 34px;
+  position: relative;
+  .closeBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+}
+.wxCode{
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid #eee;*/
+  margin-left: 100px;
+}

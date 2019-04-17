@@ -1,0 +1,110 @@
+
+.shop-left{
+  width: 854px;
+  min-height: 210px;
+  li{
+    height: 164px;
+    border: 1px solid #eaeaea;
+    overflow: hidden;
+    background: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    &:hover{
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    }
+    .img{
+      width: 218px;
+      height: 164px;
+      float: left;
+      margin-right: 30px;
+      position: relative;
+      img{
+        width: 218px;
+        height: 164px;
+      }
+      div{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:68px;
+        height: 35px;
+        &.xinshang{
+          background: url("../images/shopList/xinshang.png") no-repeat;
+        }
+        &.remeng{
+          background: url("../images/shopList/remeng.png") no-repeat;
+        }
+        &.jingxuan{
+          background: url("../images/shopList/jingxuan.png") no-repeat;
+        }
+      }
+      .chengjiao{
+        position: absolute;
+        left: auto;
+        top: auto;
+        right: 0;
+        bottom: 0;
+        width: 122px;
+        height: 35px;
+        background: url("../images/shopList/chengjiao.png") no-repeat;
+      }
+    }
+    .txt{
+      width: 380px;
+      height: 164px;
+      float: left;
+      h5{
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+        margin-top: 20px;
+      }
+      p{
+        width: 380px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        font-size: 16px;
+        color: #898989;
+        margin: 26px 0;
+      }
+      .tag{
+        span{
+          display: inline-block;
+          font-size: 14px;
+          border-radius: 3px;
+          color: #64ABFF;
+          width: 86px;
+          height: 26px;
+          line-height: 26px;
+          text-align: center;
+          margin-right: 8px;
+          border: 1px solid #64ABFF;
+        }
+      }
+    }
+    .price{
+      width: 160px;
+      height: 164px;
+      float: right;
+      p{
+        margin-top: 60px;
+        margin-bottom: 14px;
+        span{
+          font-size: 24px;
+          color: #D73D2F;
+          font-weight: bold;
+        }
+        b{
+          font-size: 14px;
+          color: #D73D2F;
+        }
+      }
+      div{
+        span{
+          color: #D73D2F;
+        }
+      }
+    }
+  }
+}

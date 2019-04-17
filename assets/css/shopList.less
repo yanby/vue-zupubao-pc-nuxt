@@ -1,0 +1,222 @@
+
+.shop{
+  .shopList{
+    padding-top: 20px;
+    padding-bottom: 60px;
+    h2{
+      width: 1200px;
+      height: 60px;
+      line-height: 60px;
+      background: #fff;
+      position: relative;
+      span{
+        font-size: 14px;
+        color: #898989;
+        padding-left: 20px;
+        a,b{
+          cursor: pointer;
+          &:hover{
+            color: #224E8F;
+          }
+        }
+      }
+      .search{
+        overflow: hidden;
+        position: absolute;
+        right: 20px;
+        top: 9px;
+        width: 615px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        border: 1px solid #ddd;
+        input{
+          float: left;
+          width: 550px;
+          height: 40px;
+        }
+        input::-webkit-input-placeholder {
+          color: #ccc;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+          color: #ccc;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+          color: #ccc;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+          color: #ccc;
+        }
+        button{
+          float: left;
+          width: 35px;
+          height: 40px;
+          cursor: pointer;
+          background: url("../images/shopList/search.png") center center no-repeat;
+        }
+      }
+    }
+    .search-list{
+      background: #fff;
+      border: 1px solid #A6BCE2;
+      margin-top: 20px;
+      padding: 20px;
+      .one{
+        li{
+          position: relative;
+          margin-bottom: 30px;
+          //overflow: hidden;
+          line-height: 18px;
+          border-bottom: 1px solid transparent;
+          span{
+            float: left;
+            font-size: 16px;
+            font-weight: bold;
+            color:#333;
+            margin-right: 30px;
+            b{
+              margin-left: 32px;
+              font-weight: bold;
+            }
+            i{
+              margin-left: 8px;
+              font-weight: bold;
+            }
+          }
+          .two{
+            width: 1130px;
+            b{
+              font-size: 14px;
+              height: 18px;
+              line-height: 18px;
+              margin-right: 20px;
+              padding-bottom: 5px;
+              cursor: pointer;
+              color: #333;
+              border-bottom: 1px solid transparent;
+              &.cur{
+                color: #224E8F;
+                border-bottom: 1px solid #224E8F;
+              }
+            }
+          }
+          .three {
+            margin: 16px 0 0 92px;
+            width: 1017px;
+            padding: 10px 20px;
+            background: #EDF3FD;
+            text-align: justify;
+            border: 1px solid #A6BCE2;
+            border-radius: 5px;
+            i{
+              margin-right: 20px;
+              margin-bottom: 5px;
+              float: left;
+              font-size: 12px;
+              color: #333;
+              cursor: pointer;
+              &.cur{
+                color: #224E8F;
+              }
+            }
+          }
+          .threeArea,.threeYetai{
+            display: none;
+          }
+        }
+        .search-click{
+          text-align: center;
+          font-size: 16px;
+          color: #333;
+          cursor: pointer;
+          span{
+            display: inline-block;
+            width: 9px;
+            height: 6px;
+            vertical-align: 3px;
+            background: url("../images/shopList/xia.png") no-repeat;
+            &.cur{
+              background: url("../images/shopList/shang.png") no-repeat;
+            }
+          }
+        }
+      }
+    }
+    .shop-list{
+      margin-top: 20px;
+      h3{
+        background: #EDF3FD;
+        font-size: 14px;
+        padding-left: 20px;
+        position: relative;
+        .list{
+          padding: 14px 0;
+          span{
+            display: inline-block;
+            font-size: 14px;
+            color: #898989;
+            margin-right: 10px;
+            line-height: 20px;
+            position: relative;
+            &.select{
+              border: 1px solid #ccc;
+              padding: 2px 30px 2px 10px;
+              b{
+                position: absolute;
+                right: 5px;
+                top: 7px;
+                width: 12px;
+                height: 11px;
+                cursor: pointer;
+                background:url("../images/shopList/close.png") no-repeat;
+              }
+            }
+          }
+        }
+        .clear{
+          position: absolute;
+          right: 20px;
+          top: 17px;
+          font-size: 16px;
+          color: #333;
+          b{
+            display: inline-block;
+            width: 16px;
+            height: 18px;
+            margin-right: 10px;
+            vertical-align: -2px;
+            background: url("../images/shopList/clean.png") no-repeat;
+          }
+          i{
+            cursor: pointer;
+          }
+        }
+      }
+      h4{
+        font-size: 20px;
+        color: #333;
+        height: 70px;
+        line-height: 70px;
+      }
+      .shop-msg{
+        .shop-right{
+          width: 322px;
+          height: 225px;
+          background: url("../images/shopList/download.png") no-repeat;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+    .page{
+      .el-pagination{
+        .el-pager li:last-child{
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,303 @@
+.buy-wrap{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+  z-index: 999999;
+  .buy{
+    width:600px;
+    height: 550px;
+    position: absolute;
+    left: 50%;
+    margin-left: -284px;
+    top: 50%;
+    margin-top: -276px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #E85850;
+    .close{
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      top: 0px;
+      right:-33px;
+      cursor: pointer;
+      background: url("../images/buy/close.png") no-repeat;
+    }
+    .buy-title{
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      font-size: 0;
+      span{
+        display: inline-block;
+        width: 194px;
+        height: 48px;
+        line-height: 48px;
+        background: #F7F8FA;
+        color: #666;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        &.cur{
+          color: #fff;
+          background: url("../images/buy/title.png") no-repeat;
+        }
+      }
+      span:nth-of-type(1){
+        border-radius: 8px 0 0 0;
+        &.cur{
+          border-radius: 2px 0 0 0;
+        }
+      }
+      span:nth-of-type(2){
+        border-radius: 0 8px 0 0;
+        &.cur{
+          border-radius: 0 2px 0 0;
+        }
+      }
+    }
+    .tab{
+      .huiyuan{
+        height: 500px;
+        overflow-y: auto;
+        h3{
+          font-size: 18px;
+          color: #333;
+          margin: 20px 0 10px;
+          text-align: center;
+          font-weight: bold;
+        }
+        .jieshao{
+          text-align: center;
+          padding-top: 34px;
+          p{
+            font-size: 14px;
+            margin-bottom: 25px;
+            color: #333;
+            span{
+              color: #E85850;
+              font-weight: 500;
+              font-size: 24px;
+            }
+          }
+        }
+        .price{
+          width: 488px;
+          margin: 10px auto 20px;
+          .price-list{
+            margin-bottom: 10px;
+          }
+          .yuan{
+            float: left;
+            width: 388px;
+            background: #FFF7F6;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 5px 0 0 5px;
+            span {
+              display: inline-block;
+              width: 100px;
+              text-align: center;
+              font-size: 14px;
+              color: #111;
+              margin-left: 74px;
+            }
+            b{
+              display: inline-block;
+              width: 100px;
+              text-align: center;
+              font-size: 14px;
+              color: #E85850;
+              margin-left: 50px;
+              font-weight: 500;
+              i{
+                color: #111;
+                font-weight: normal;
+              }
+            }
+          }
+          .btn{
+            border-radius: 0 5px 5px 0;
+            float: left;
+            display: inline-block;
+            width: 100px;
+            height:35px;
+            line-height: 35px;
+            background: #E85850;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+        h4{
+          width: 272px;
+          height: 16px;
+          background: url("../images/buy/wenti.png") no-repeat;
+          margin:0 auto 10px;
+        }
+        .yiwen{
+          width: 540px;
+          height: 672px;
+          margin: 30px auto 40px;
+          background: url("../images/buy/huiyuan.png") no-repeat;
+          p{
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #666;
+            i{
+              color: #E85850;
+              font-weight: 500;
+            }
+            span,b{
+              vertical-align: -3px;
+              margin-right: 10px;
+              display:inline-block;
+              width: 14px;
+              height: 14px;
+              display: inline-block;
+              background: url("../images/buy/wenhao.png") no-repeat;
+            }
+            b{
+              background: url("../images/buy/yiwen.png") no-repeat;
+            }
+          }
+        }
+      }
+      .xuanzhi{
+        height: 500px;
+        overflow-y: auto;
+        .xuanzhi-title{
+          width: 526px;
+          height: 247px;
+          margin: 40px auto;
+          background: url("../images/buy/xuanzhi-title.png") no-repeat;
+        }
+        .price{
+          width: 488px;
+          margin: 10px auto 20px;
+          .price-list{
+            margin-bottom: 10px;
+          }
+          .yuan{
+            float: left;
+            width: 388px;
+            background: #FFF7F6;
+            height: 35px;
+            line-height: 35px;
+            border-radius: 5px 0 0 5px;
+            span {
+              text-align: center;
+              display: inline-block;
+              width: 129px;
+              text-align: center;
+              font-size: 14px;
+              color: #111;
+            }
+            b{
+              text-align: center;
+              display: inline-block;
+              width: 100px;
+              font-size: 14px;
+              color: #E85850;
+              font-weight: 500;
+              s{
+                color: #111;
+                font-weight: normal;
+              }
+            }
+            i{
+              text-align: center;
+              display: inline-block;
+              width: 129px;
+              color: #111;
+            }
+          }
+          .btn{
+            border-radius: 0 5px 5px 0;
+            float: left;
+            display: inline-block;
+            width: 100px;
+            height:35px;
+            line-height: 35px;
+            background: #E85850;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+          }
+        }
+        .xuanzhi-msg{
+          width: 550px;
+          height: 690px;
+          margin: 40px auto;
+          background: url("../images/buy/xuanzhi-msg.png") no-repeat;
+        }
+      }
+      .zhuanpu{
+        height: 500px;
+        overflow-y: auto;
+        .zhuanpu-title{
+          width: 251px;
+          height: 96px;
+          margin: 40px auto;
+          background: url("../images/buy/zhuanpu-title.png") no-repeat;
+        }
+        .price{
+          width: 432px;
+          text-align: center;
+          margin: 0px auto 30px;
+          .price-list{
+            float: left;
+            width: 110px;
+            height: 144px;
+            margin: 0 16px;
+            border: 1px solid #E85850;
+            border-radius: 5px;
+          }
+          .yuan{
+            span {
+              text-align: center;
+              display: inline-block;
+              text-align: center;
+              font-size: 18px;
+              color: #999;
+              margin-top:30px;
+            }
+            b{
+              display: inline-block;
+              margin-top: 18px;
+              text-align: center;
+              font-size: 26px;
+              color: #444;
+              font-weight: bold;
+            }
+          }
+          .btn{
+            border-radius: 0 5px 5px 0;
+            display: inline-block;
+            width: 111px;
+            height:30px;
+            line-height: 30px;
+            background: #E85850;
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 17px;
+          }
+        }
+        .zhuanpu-msg{
+          width: 528px;
+          height: 320px;
+          margin: 40px auto;
+          background: url("../images/buy/zhuanpu-msg.png") no-repeat;
+        }
+      }
+    }
+
+  }
+}
